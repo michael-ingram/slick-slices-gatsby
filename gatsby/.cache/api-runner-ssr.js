@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('/Users/mingram/react/gatsbyCourse/starter-files/gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/mingram/react/gatsbyCourse/starter-files/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      options: {"plugins":[],"projectId":"lkzt03wl","dataset":"production","watchMode":true,"token":"skLGDIE4WpovCoHtQFXM0SFWn0lbFLRWi7EuEJMp8WRatsjXmFRfx4LDtIjGVoeMgyzWY2tZrYzL63gsmxo5kuwfXC36ljJmONrGcEOIqQFUh41BTUTKDblxFq2tvgEJAExkIO3iVBzPIijLeEsJh0TRr0fPzCDRrTmzhH9BSfS1Pme3R0tt"},
+    },{
       plugin: require('/Users/mingram/react/gatsbyCourse/starter-files/gatsby/gatsby-ssr'),
       options: {"plugins":[]},
     }]
