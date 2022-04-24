@@ -63,7 +63,6 @@ async function fetchBeersAndTurnIntoNodes({
 }) {
   const res = await fetch('https://api.sampleapis.com/beers/stouts');
   const beers = await res.json();
-  console.log(beers);
   beers.forEach((beer) => {
     if (!beer.name) {
       return;
@@ -115,7 +114,6 @@ async function turnSlicemastersIntoPages({ graphql, actions }) {
   const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE);
   const pageCount = Math.ceil(data.slicemasters.totalCount / pageSize);
   Array.from({ length: pageCount }).forEach((_, i) => {
-    console.log(`creating page ${i}`);
     actions.createPage({
       path: `/slicemasters/${i + 1}`,
       component: path.resolve('./src/pages/slicemasters.js'),
